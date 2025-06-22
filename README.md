@@ -11,7 +11,7 @@ This repository contains the materials for the Java training course led by Nuno 
 
 ## Requirements
 
-- JDK 17+
+- JDK 24+
 - IDE such as IntelliJ, Eclipse, or VS Code
 - Git
 
