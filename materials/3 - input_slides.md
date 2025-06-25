@@ -195,6 +195,6 @@ if (console != null) {
 - How to handle common input issues
 - How to store values in arrays and calculate results
 
-🔗 [Course GitHub Repository](https://github.com/yourusername/java-training-course)
+🔗 [Course GitHub Repository](https://github.com/NSCarvalho/java-training-course)
 
 

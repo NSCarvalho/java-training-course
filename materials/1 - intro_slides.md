@@ -77,7 +77,12 @@ public class HelloWorld {
     }
 }
 ```
+To compile and run this program using the terminal:
 
+```bash
+javac HelloWorld.java
+java HelloWorld
+```
 ---
 
 # Summary
@@ -85,45 +90,6 @@ public class HelloWorld {
 ✅ Concepts introduced:
 - What is programming
 - Installing Java and IntelliJ
-- Creating and running your first Java program
-
-🔗 [Course GitHub Repository](https://github.com/yourusername/java-training-course)
----
-
-# Creating Your First Java Program
-
-Steps:
-1. Open IntelliJ -> New Project  
-2. Select Java, choose SDK (JDK 24)  
-3. Create file `HelloWorld.java`  
-4. Type the following code:
-
----
-
-## HelloWorld.java
-
-```java
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-
-To compile and run this program using the terminal:
-
-```bash
-javac HelloWorld.java
-java HelloWorld
-```
-
----
-
-# Summary
-
-✅ Concepts introduced:
-- What is programming  
-- Installing Java and IntelliJ  
 - Creating and running your first Java program
 
 🔗 [Course GitHub Repository](https://github.com/yourusername/java-training-course)

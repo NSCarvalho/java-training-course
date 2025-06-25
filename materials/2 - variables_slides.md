@@ -171,4 +171,4 @@ Attempting to reassign it will result in a compilation error.
 - Use of `var` and `final`
 - Good naming practices
 
-🔗 [Course GitHub Repository](https://github.com/yourusername/java-training-course)
+🔗 [Course GitHub Repository](https://github.com/NSCarvalho/java-training-course)

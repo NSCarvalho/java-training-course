@@ -55,19 +55,7 @@ switch (day) {
 ```
 
 📚 [switch - Oracle Docs](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html)
-
----
-
-# Comparison Operators Recap
-
-| Operator | Description              |
-|----------|--------------------------|
-| `==`     | Equal to                 |
-| `!=`     | Not equal to             |
-| `>`      | Greater than             |
-| `<`      | Less than                |
-| `>=`     | Greater than or equal to |
-| `<=`     | Less than or equal to    |
+📚 [switch Java 24 - Oracle Docs](https://docs.oracle.com/en/java/javase/24/language/switch-expressions-and-statements.html)
 
 ---
 
@@ -108,6 +96,8 @@ do {
 
 Runs at least once before checking the condition.
 
+📚 [The while and do-while Statements - Oracle Docs](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html)
+
 ---
 
 # `for` Loop
@@ -121,6 +111,9 @@ for (int i = 0; i < 5; i++) {
 - Initialization: `int i = 0`
 - Condition: `i < 5`
 - Increment: `i++`
+
+📚 [The for Statement - Oracle Docs](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html)
+📚 [The for Statement Java 24- Oracle Docs](https://docs.oracle.com/javase/specs/jls/se24/html/jls-14.html#jls-14.14)
 
 ---
 
@@ -136,7 +129,6 @@ for (int i = 0; i < 10; i++) {
     System.out.println(i);
 }
 ```
-
 ---
 
 # Summary
@@ -146,4 +138,4 @@ for (int i = 0; i < 10; i++) {
 - When and how to use `while`, `do-while`, and `for` loops
 - How to control loop execution with `break` and `continue`
 
-🔗 [Course GitHub Repository](https://github.com/yourusername/java-training-course)
+🔗 [Course GitHub Repository](https://github.com/NSCarvalho/java-training-course)
