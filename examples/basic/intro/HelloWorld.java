@@ -1,4 +1,4 @@
-package examples.intro;
+package intro;
 
 public class HelloWorld {
     public static void main(String[] args) {
