@@ -1,9 +1,9 @@
 ---
 marp: true
-title: Session 09 - Classes and Object-Oriented Concepts
+title: Session 07 - Classes and Object-Oriented Concepts
 ---
 
-# Session 09: Classes and Object-Oriented Concepts
+# Session 07: Classes and Object-Oriented Concepts
 
 **Goals:**
 
