@@ -8,6 +8,7 @@ public class Operators {
 
         System.out.println("=== Operadores Aritméticos ===");
         numberAfterOperation = number2 + number4;
+
         System.out.println("number2 + number4 = " + numberAfterOperation); // 6
 
         numberAfterOperation = number2 - number4;

@@ -64,7 +64,7 @@ Ask the user for an integer and compute the sum of its digits using recursion.
 
 ## 🧪 Exercise 9 – Array-based Calculator with Methods
 
-Build a calculator that:
+Build a euroCalculator that:
 - Accepts an array of doubles
 - Provides methods for: average, sum, min, max, median
 
@@ -143,6 +143,7 @@ Create a `MathTable` utility that:
 ## 🧪 Exercise 20 – Recursively Reverse an Array
 
 Write a recursive method to reverse an array of integers.
+[1,2,3,4,5] -> [5,4,3,2,1]
 
 ---
 
