@@ -4,7 +4,7 @@ This repository contains the materials for the Java training course led by Nuno 
 
 ## Structure
 
-- `slides/`: Slides to support each session
+- `materials/`: Slides to support each session
 - `examples/`: Code examples shown in class
 - `exercises/`: Practice exercises for students
 - `projects/`: Intermediate and final projects
