@@ -1,15 +1,23 @@
 package classes.calculator;
 
+import java.lang.management.MemoryUsage;
+
 public enum EuroCalculator {
 
     ADD("€", "+",
-            (a, b) -> a +b ),
-    SUBTRACT("€", "-",
-            (a, b) -> a - b),
-    MULTIPLY("€","*",
-            (a, b) -> a * b),
-    DIVIDE("€","/",
-            (a, b) -> a / b);
+            (a, b) -> a + b),
+            SUBTRACT("€", "-",
+                    // Anonymous class
+                    new IOperation() {
+                        @Override
+                        public double execute(double a, double b) {
+                            return a - b;
+                        }
+                    }),
+            MULTIPLY("€", "*",
+                    new Multiply()),
+            DIVIDE("€", "/",
+                    (a, b) -> a / b);
     private final String currency;
     private final String symbol;
     private final IOperation operation;

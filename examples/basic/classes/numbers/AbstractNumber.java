@@ -32,4 +32,8 @@ public abstract class AbstractNumber implements Number{
     public boolean isEquals(BigNumber bigNumber) {
         return bigNumber.getNumberAsDouble() == this.value;
     }
+
+    public void printNumber() {
+        System.out.println("Number is " + getNumberAsDouble());
+    }
 }
