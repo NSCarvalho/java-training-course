@@ -1,0 +1,9 @@
+pt\nmc\App.class
+pt\nmc\repos\StudentRepo.class
+pt\nmc\repos\Postresql.class
+pt\nmc\dictionary\exceptions\WordNotFoundException.class
+pt\nmc\dictionary\Dictionary.class
+pt\nmc\model\Student.class
+pt\nmc\model\Student$StudentBuilder.class
+pt\nmc\dictionary\HashMapDictionary.class
+pt\nmc\repos\MemoryDataBase.class

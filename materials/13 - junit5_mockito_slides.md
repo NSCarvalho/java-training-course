@@ -8,7 +8,10 @@ title: Session 13 - Unit Testing with JUnit 5 and Mockito
 **Goals:**
 - Understand the fundamentals of unit testing
 - Learn how to use JUnit 5 for writing tests
+- Understand how to test exception-throwing code using JUnit 5
+- Use `assertThrows()` to validate expected exceptions
 - Learn how to mock dependencies using Mockito
+- Use mocks when necessary to simulate behaviors
 - Understand test structure, lifecycle, and assertions
 
 ---
@@ -103,6 +106,68 @@ void testEven(int number) {
 
 ---
 
+## 🔥 Why Test Exceptions?
+
+Exception testing is crucial to ensure your code handles error scenarios correctly and fails gracefully when needed.
+
+---
+
+## ✅ Basic Example with assertThrows()
+
+JUnit 5 provides `assertThrows()` to test that a specific exception is thrown.
+
+```java
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+@Test
+void shouldThrowArithmeticException() {
+    assertThrows(ArithmeticException.class, () -> {
+        int result = 10 / 0;
+    });
+}
+```
+
+📚 [JUnit 5 Assertions](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html)
+
+---
+
+## 🧪 Testing Custom Exceptions
+
+```java
+class InvalidAgeException extends RuntimeException {
+    public InvalidAgeException(String message) {
+        super(message);
+    }
+}
+```
+
+Test it:
+
+```java
+@Test
+void shouldThrowInvalidAgeException() {
+    PersonService service = new PersonService();
+    assertThrows(InvalidAgeException.class, () -> service.registerAge(-1));
+}
+```
+
+---
+
+## 🛠️ Using assertThrows to Check Message
+
+```java
+@Test
+void shouldCheckExceptionMessage() {
+    Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+        validateInput(null);
+    });
+    assertEquals("Input cannot be null", exception.getMessage());
+}
+```
+
+---
+
+
 ## 🧰 What is Mockito?
 
 Mockito is a mocking framework used to create test doubles of dependencies.
@@ -151,6 +216,44 @@ class MyServiceTest {
 
 ---
 
+## 🧰 Mocks and Exception Simulation
+
+When testing services, we can use mocks to simulate exception throwing.
+
+```java
+@Mock
+FileService fileService;
+
+@Test
+void shouldThrowIOExceptionWhenReadingFile() throws IOException {
+    when(fileService.readFile(anyString())).thenThrow(new IOException("Disk error"));
+
+    assertThrows(IOException.class, () -> {
+        fileService.readFile("data.txt");
+    });
+}
+```
+
+---
+
+## 🔄 Catching and Re-Throwing in Tests
+
+You can also use try-catch if you want to inspect exception content manually:
+
+```java
+@Test
+void shouldCatchAndInspect() {
+    try {
+        service.doSomethingDangerous();
+        fail("Expected exception was not thrown");
+    } catch (CustomException e) {
+        assertEquals("Expected failure", e.getMessage());
+    }
+}
+```
+
+---
+
 ## 🔍 Verifying Behavior
 
 ```java
@@ -180,6 +283,9 @@ List<String> spyList = spy(new ArrayList<>());
 ✅ You learned:
 - How to structure tests with JUnit 5
 - How to use assertions and lifecycle annotations
+- How to use `assertThrows()` in JUnit 5
+- How to test custom and built-in exceptions
 - How to mock and verify behavior with Mockito
+- How to use mocks to simulate exception conditions
 
 🔗 [Course GitHub Repository](https://github.com/NSCarvalho/java-training-course)

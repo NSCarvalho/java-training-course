@@ -25,7 +25,5 @@ public class DictionaryMain {
                 System.out.println("Word not found");
             }
         }
-
-
     }
 }
